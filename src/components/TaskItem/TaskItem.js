@@ -37,6 +37,7 @@ export default function TaskItem({
   if (isEditing) {
     return (
       <input
+        className="input is-normal"
         type="text"
         value={editableTitle}
         onChange={onTitleChange}
@@ -46,12 +47,16 @@ export default function TaskItem({
   } else {
     return (
       <div className="task-item">
-        <div onClick={(e) => setIsEditing(true)}>{title}</div>
-        <select onChange={onTaskStateChange} value={taskState}>
-          <option value="Pendente">Pendente</option>
-          <option value="Fazendo">Fazendo</option>
-          <option value="Completa">Completa</option>
-        </select>
+        <div className="task-item-title" onClick={(e) => setIsEditing(true)}>
+          {title}
+        </div>
+        <div className="select">
+          <select onChange={onTaskStateChange} value={taskState}>
+            <option value="Pendente">Pendente</option>
+            <option value="Fazendo">Fazendo</option>
+            <option value="Completa">Completa</option>
+          </select>
+        </div>
       </div>
     );
   }

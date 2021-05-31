@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Tasklist.css";
 import PropTypes from "prop-types";
-
 import TaskItem from "../TaskItem/TaskItem";
 
 // {TITLE} => INVES DE INCLUIR UMA "PROP" QUALQUER, EXPECIFICA O ITEM A SER PEGO NO EXPORT/IMPORT
@@ -34,7 +33,9 @@ function Tasklist({
           );
         })}
         {tasks.length === 0 && <div className="empty-list">Lista Vazia</div>}
-        <button onClick={addTask}>Adicionar Tarefa</button>
+        <button onClick={addTask} className="button">
+          Adicionar Tarefa
+        </button>
       </div>
     </div>
   );

@@ -17,8 +17,17 @@
   width: 100%;
 }
 
+.task-item .task-item-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 7px;
+}
+
 .task-item select {
   display: block;
   width: 100%;
   margin-top: 8px;
+}
+
+.task-item .select {
+  display: contents;
 }

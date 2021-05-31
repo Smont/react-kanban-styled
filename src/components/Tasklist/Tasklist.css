@@ -16,3 +16,7 @@
   display: flex;
   flex-direction: column;
 }
+.tasklist .input.is-normal {
+  display: block;
+  margin-bottom: 10px;
+}
