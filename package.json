@@ -1,11 +1,8 @@
 {
-  "name": "react",
+  "name": "react-kanban-simone-montagnani",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "Kanban criado com React + CSS para prática.",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "prop-types": "15.7.2",
